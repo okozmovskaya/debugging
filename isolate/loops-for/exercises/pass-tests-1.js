@@ -3,14 +3,17 @@
 function repeater(text, repeats) {
   if (typeof text !== 'string') { throw new TypeError(); }
   if (typeof repeats !== 'number') { throw new TypeError(); }
-
-  for (_; _; _) {
-
+  
+  let result = '';
+  
+  for (let i = 0; i < repeats; i++) {
+  result += i + text + ' ';
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }
   return result;
 }
+
 
 
 const _1_expect = '018 118 218 ';

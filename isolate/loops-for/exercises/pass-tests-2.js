@@ -4,9 +4,15 @@ function alternator(range, str1, str2) {
   if (typeof range !== 'number') { throw new TypeError(); }
   if (typeof str1 !== 'string') { throw new TypeError(); }
   if (typeof str2 !== 'string') { throw new TypeError(); }
+  
+  let result = '';
 
-  for (_; _; _) {
-
+  for (let i = 0; i < range; i++) {
+    if (i % 2 === 0) {
+      result += str1;
+    } else if (i % 2 !== 0) {
+      result += str2;
+    }
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }
